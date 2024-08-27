@@ -21,7 +21,7 @@ public class CambioService {
 		if(cambio == null)
 			throw new CurrencyUnsupportedException();
 		
-		return new Cambio();		
+		return cambio;		
 	}
 	
 	public Cambio conversion (Cambio cambio, BigDecimal ammount) {

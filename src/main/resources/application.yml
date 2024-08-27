@@ -15,6 +15,7 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
+        default_schema: cambio-service
   flyway:
     url: jdbc:postgresql://localhost:5432/cambio_service
     schemas: cambio-service
