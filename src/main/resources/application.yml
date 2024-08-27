@@ -3,3 +3,21 @@ server:
 spring:
   application:
     name: cambio-service
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/cambio_service
+    username: postgres
+    password: 123456789
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  flyway:
+    url: jdbc:postgresql://localhost:5432/cambio_service
+    schemas: cambio-service
+    user: postgres
+    password: 123456789
+      
